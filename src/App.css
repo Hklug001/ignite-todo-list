@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1a1a1a;
+  align-items: flex-start;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header {
+  width: 100vw;
+  height: 12.5rem;
+  background-color: #0d0d0d;
+}
+
+main {
+  flex-direction: column;
+  width: 46rem;
+  gap: 4rem;
+}
+
+form#toDo-input-section {
+  gap: 0.5rem;
+  margin-top: -1.6875rem;
+}
+
+input#toDo-input {
+  background: #262626;
+  border-radius: 0.5rem;
+  border: 1px solid #0d0d0d;
+  padding: 1rem;
+  color: #808080;
+  font-weight: 400;
+
+  width: 40rem;
+  height: 3.375rem;
+
+  justify-content: flex-start;
+}
+
+button#create-button {
+  background-color: #1e6f9f;
+  color: #f2f2f2;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 0;
+
+  width: 5.625rem;
+  height: 3.375rem;
+
+  gap: 0.5rem;
+}
+
+section#toDo-list-section {
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+div#toDo-info {
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 700;
+}
+
+#toDo-info div {
+  gap: 0.5rem;
+}
+
+span#created-tasks-span {
+  color: #4ea8de;
+}
+
+span#concluded-tasks-span {
+  color: #8284fa;
+}
+
+span.toDo-info-number {
+  background-color: #333333;
+  color: #d9d9d9;
+
+  border-radius: 62.4375rem;
+  padding: 0.125rem 0.5rem;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+li.wrapper {
+  background-color: #262626;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  height: 4.5rem;
+  border: 1px solid #333333;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+li.checked {
+  color: #808080;
+}
+
+li img {
+  cursor: pointer;
+}
+
+div#todo-list-empty {
+  flex-direction: column;
+  color: #808080;
+}
+
+div#todo-list-empty span {
+  margin-top: 1rem;
+  font-weight: 700;
+}
